@@ -41,7 +41,7 @@
 
 .audio {
   width: 49vh;
-  height: 9vh;
+  height: 6vh;
 }
 
 /* SLIDE */
@@ -204,18 +204,45 @@ body:has(input[value="five"]:checked) .wrapper {
 
 /* ADAPTIVE */
 
+@media (max-width: 1920px) {
+  .audio {
+    width: 49vh;
+    height: 6vh;
+  }
+}
+
+@media (max-width: 1440px) {
+  .audio {
+    width: 40vh;
+    height: 6vh;
+  }
+}
+
 @media (max-width: 1265px) {
+  .audio {
+    width: 30vh;
+    height: 6vh;
+  }
 
-.audio {
-  width: 30vh;
-  height: 9vh;
-}
+  .slide-footer {
+    flex-direction: column;
+  }
 
-.slide-footer {
-  flex-direction: column;
-}
-
-.slide-footer-radio {
+  .slide-footer-radio {
     align-self: center;
+  }
 }
+
+@media (max-width: 800px) {
+  .audio {
+    width: 20vh;
+    height: 6vh;
+  }
+}
+
+@media (max-width: 500px) {
+  .audio {
+    width: 15vh;
+    height: 6vh;
+  }
 }
